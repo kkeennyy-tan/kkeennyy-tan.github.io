@@ -1,0 +1,157 @@
+
+
+/* 1----------- iphone 4 portrait -------------------- */
+
+@media only screen and (min-width: 320px)  {
+.containers{
+width: 100%;
+margin: auto;
+}
+.containers img{
+height: 150px;
+width: 320px;
+    
+}
+    
+/* 2-----------Galaxy note 3 portrait --------------------  */
+@media only screen and (min-width: 360px){
+.containers {
+width: 100%;
+margin: auto;
+}
+.containers img{
+height: 150px;
+width: 360px;
+}
+}
+
+/* 3----------- Iphone 6 portrait --------------------  */
+@media only screen and (min-width: 375px){
+.containers {
+width: 100%;
+margin: auto;
+}
+.containers img{
+height: 150px;
+width: 375px;
+}
+}
+
+/* 4----------- Iphone 6 Plus portrait --------------------  */
+@media only screen and (min-width: 414px){
+.containers {
+width: 100%;
+margin: auto;
+}
+.containers img{
+height: 150px;
+width: 414px;
+}
+}
+   
+    
+/* 5-----------iphone 4 landscape --------------------  */
+@media only screen and (min-width: 479px){
+.containers {
+width: 100%;
+margin: auto;
+}
+.containers img{
+height: 150px;
+width: 479px;
+}
+}
+    /* 6-----------Iphone 5 landscape --------------------  */
+@media only screen and (min-width: 568px){
+.containers {
+width: 100%;
+margin: auto;
+}
+.containers img{
+height: 150px;
+width: 568px;
+}
+}
+    /* 7-----------Galaxy note 3 landscape --------------------  */
+@media only screen and (min-width: 640px){
+.containers {
+width: 100%;
+margin: auto;
+}
+.containers img{
+height: 150px;
+width: 640px;
+}
+}
+
+/* 8----------- Iphone 6 landscape --------------------  */
+@media only screen and (min-width: 667px){
+.containers {
+width: 100%;
+margin: auto;
+}
+.containers img{
+height: 150px;
+width: 667px;
+}
+}
+
+/* 9----------- Iphone 6 Plus landscape --------------------  */
+@media only screen and (min-width: 736px){
+.containers {
+width: 100%;
+margin: auto;
+}
+.containers img{
+height: 160px;
+width: 736px;
+}
+}
+
+/* 10----------- Ipad Portrait --------------------  */
+@media only screen and (min-width: 768px){
+.containers {
+width: 100%;
+margin: auto;
+}
+.containers img{
+height: 190px;
+width: 768px;
+}
+}
+
+/* 11----------- Ipad Landscape --------------------  */
+@media only screen and (min-width: 1024px){
+.containers {
+width: 100%;
+margin: auto;
+}
+.containers img{
+height: 200px;
+width: 1020px;
+}
+}
+/* 11----------- Ipad Landscape ----original------------ 
+@media only screen and (min-width: 1024px){
+.containers {
+width: 100%;
+margin: auto;
+}
+.containers img{
+height: 250px;
+width: 1024px;
+}
+}
+ */
+/* 12----------- Desktop --------------------  
+@media only screen and (min-width: 1080px){
+.containers {
+width: 100%;
+margin: auto;
+}
+.containers img{
+height: 200px;
+width: 1080px;
+}
+}
+*/

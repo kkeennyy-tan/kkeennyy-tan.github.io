@@ -1,0 +1,165 @@
+/*for mobile*/
+*{
+    margin: 0;
+    padding: 0;
+
+}
+/*header*/
+header {
+	background-color: white;
+     width: 100%;
+    height: auto;
+}
+/*navbar*/
+nav {
+    z-index:200;
+
+}
+.fixed {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	bottom:1;
+}
+
+
+nav{
+    background: #DA4453;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+}
+
+.logo-section{
+    
+    float: left;
+    padding: 30px;
+    font-family: serif;
+    font-size: 25px;  
+}
+.logo-section a{
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+.hb-button{
+    float: right;
+    background: #DA4453; /* hamburger */
+    color: #fff;
+    border: none;
+    font-size: 25px;
+    padding: 1px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: none;
+}
+
+/*dito umpisa*/
+nav li a{
+  color: #fff;/***********/
+  display: block;
+  padding: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+nav li a:hover,
+nav li a:focus {
+  background: #DA4453;
+  color: #2C3E50; /*eto*/
+    text-decoration: none;
+}
+
+/*stop*/
+nav a{
+    text-decoration: none;
+    color: #282828;
+    font-size: 20px;
+    padding: 5px;
+}
+
+nav ul{
+    overflow: hidden;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    transition: max-height 0.5s;
+    -webkit-transition: max-height 0.5s;
+    -moz-transition: max-height 0.5s;
+    -ms-transition: max-height 0.5s;
+    -o-transition: max-height 0.5s;
+}
+
+nav ul li{
+    float: right;
+    display: inline-block;
+    padding: 20px;
+}
+
+li > a{
+    position: relative;
+    color: #000;
+    text-decoration: none;
+    
+}
+
+li > a:hover{
+    color: #000;
+}
+
+li > a:before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #2C3E50; /*hover underline*/
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+li > a:hover:before{
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+    @media screen and (max-width: 768px){
+    .logo-section{
+        float: none;
+    }
+    nav ul{
+        background: #ffffff;
+        max-height: 0;
+        width: 100%;
+    }
+    nav ul.show{
+        max-height: 20em;
+    }
+    nav ul li{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 1px;
+    }
+    .hb-button{
+        display: inline;
+    }
+    nav li {
+        border-bottom: 1px solid #575766;
+    }
+    nav li a{
+        color: #000;
+        } 
+    nav li a:hover,
+    nav li a:focus {
+        background: #ffebee;
+        color: #2C3E50; /*eto*/
+        text-decoration: none;
+}
+}
