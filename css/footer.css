@@ -1,3 +1,9 @@
+/*for mobile*/
+*{
+    margin: 0;
+    padding: 0;
+
+}
 .nb-footer{
   background: #EC8283;/***************/
   margin-top: 60px;
