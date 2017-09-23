@@ -38,7 +38,7 @@
   transition:all 0.4s ease-in-out;
 }
 li > a:hover:before{
-    background-color:#fff;
+   visibility: hidden;
 }
 .nb-footer .footer-single li a:hover{
   color: #fff;
