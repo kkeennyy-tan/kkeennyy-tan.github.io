@@ -1,6 +1,5 @@
-@import "bootstrap-social.less";
 .nb-footer{
-  background: #BF55EC;/***************/
+  background: #E38B93;/***************/
   margin-top: 60px;
   padding-bottom: 30px;
 }
@@ -37,6 +36,9 @@
   padding: 6px 0px;
   display: block;
   transition:all 0.4s ease-in-out;
+}
+li > a:hover:before{
+    background-color:#fff;
 }
 .nb-footer .footer-single li a:hover{
   color: #fff;
@@ -111,8 +113,8 @@
   line-height: 22px;
 }
 .nb-copyright{
-  background: #9A12B3;/*********/
-  padding-bottom: 10px;
+  background: #3D9EB4;/****nabago*****/
+  padding-bottom: 20px;
 }
  .nb-copyright .copyrt{
   margin-top: 22px;
