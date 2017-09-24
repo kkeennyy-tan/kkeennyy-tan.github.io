@@ -124,6 +124,7 @@ li > a:before{
     transition: all 0.3s ease-in-out 0s;
 }
 
+
 li > a:hover:before{
     visibility: visible;
     -webkit-transform: scaleX(1);

@@ -94,18 +94,8 @@
 .nb-footer .footer-project a{
   font-size: 13px;
 }
-.nb-footer .footer-project img{
-  margin-bottom: 20px;
-  border: 1px solid #666;
-  border-radius: 6px;
-  padding: 1px;
-  opacity: 0.7;
-  transition:all 0.4s ease-in-out;
-}
-.nb-footer .footer-project img:hover{
-  opacity: 1.0;
-  cursor: pointer;
-}
+
+
 .nb-footer .footer-project .footer-title{
   margin-top: 0;
 }
@@ -155,4 +145,8 @@
  .right-clear{
 	padding-right: 0;
 }
+    iframe{
+        height: 320px;
+width: 320px;
+    } 
 }
