@@ -14,7 +14,6 @@
 .nb-footer .footer-single a{
 	text-decoration: none;
 }
-
 .nb-footer .footer-single h2{
     color: #eee;
   font-size: 18px;
@@ -45,7 +44,6 @@
 }
 .nb-footer .footer-single li a:hover{
   color: #fff;
-    
 }
 .nb-footer .footer-single li a:hover i{
   color: #fff;
@@ -94,8 +92,6 @@
 .nb-footer .footer-project a{
   font-size: 13px;
 }
-
-
 .nb-footer .footer-project .footer-title{
   margin-top: 0;
 }
@@ -144,9 +140,22 @@
 }
  .right-clear{
 	padding-right: 0;
+} 
+/* 
+  =====================================
+  CSS for <iframe> embedded Google Map
+  ===================================== 
+*/
+.mapWrapper {
+    position: relative;
+    padding-bottom: 66.6666667%; 
+    height: 0;
 }
-    iframe{
-        height: 320px;
-width: 320px;
-    } 
+.mapWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 }
