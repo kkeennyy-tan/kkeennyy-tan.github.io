@@ -2,7 +2,6 @@
 *{
     margin: 0;
     padding: 0;
-
 }
 /*header*/
 header {
@@ -123,7 +122,6 @@ li > a:before{
     -webkit-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
 }
-
 
 li > a:hover:before{
     visibility: visible;
