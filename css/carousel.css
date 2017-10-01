@@ -1,4 +1,9 @@
 
+
+body
+{ 
+	overflow-x:hidden;
+}
 a:hover
 {
 	color:rgba( 255, 255, 255, 1 );

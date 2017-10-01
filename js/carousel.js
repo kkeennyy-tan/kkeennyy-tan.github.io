@@ -1,4 +1,4 @@
- // set and cache variables
+// set and cache variables
 		var w, container, carousel, item, radius, itemLength, rY, ticker, fps; 
 		var mouseX = 0;
 		var mouseY = 0;
@@ -107,4 +107,3 @@
 		{
 			return Math.floor((Math.random()*$n)+1);	
 		}
-      
