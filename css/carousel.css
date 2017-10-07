@@ -1,83 +1,84 @@
-.BlackText
-{
-    color: #2F2F49;
+#banner{
+
 }
 
-.section-1 h1{
-        font-family: buenard;
-        font-size: 4em; 
-        padding-left: 30%;
-        text-align: left;
-    }  
-    .section-1 h3{
-        margin-bottom: 180px; /*dito----*/
-        font-family: buenard;
-        font-size: 2em; 
-        padding-left: 30%;
-        text-align: left;
-    }
-
-.section-2 h1{
-        font-family: buenard;
-        font-size: 4em; 
-        padding-left: 30%;
-        text-align: left;
-        
-    }
+#banner img{
+    max-width: 100%; /* para magin responsive xa */
     
-.section-2 ul{
-    font-family: buenard;
-    list-style: none;
+}
+
+#banner .carousel-indicators {
+    bottom: 20px;
+}
+
+/* No need individual color class unless you need it multiple times */
+#banner{
+    color: #000; /* Black */
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.7);
+}
+
+#banner .item{
+  background: #dfad70;
+  padding: 50px 0 70px;
+    
+}
+
+#banner .item:nth-child(1){
+  background: #8AC9ED;
+}
+#banner .item:nth-child(2){
+  background: #A3DAD3;
+}
+#banner .item:nth-child(3){
+  background: #BF9CCB;
+}
+#banner .item:nth-child(4){
+  background: #dfad70;
+}
+
+
+#banner h1{
+    color: #fff; /* White */
+}
+#banner ul{
     margin: 0;
-    margin-left:   310px;
-    width: 400px;
-    font-size: 1.5em;
-    margin-bottom: 50px;
-    text-align: left;
-    }
-.section-2 li:before {
+    padding-left: 20px;
+    
+}
+
+.carousel-inner ul{
+    list-style: none;
+}
+.carousel-inner li:before {
   font-family: FontAwesome;
   content: "\f00c";
   padding-right: 20px;
-    
+   
 }
 
-.section-3 h1{
-        font-family: buenard;
-        font-size: 4em; 
-        padding-left: 1%;
-        text-align: left;
-        margin-bottom: 100px;
-        
-    }  
-.section-4 h1{
-        font-family: buenard;
-        font-size: 4em; 
-        padding-left: 40%;
-        text-align: left;
-        
-    }
-    
-.section-4 ul{
+#banner .section-1{
     font-family: buenard;
-    list-style: none;
-    margin: 0;
-    margin-left: 420px;
-    width: 550px;
-    font-size: 1.5em;
-    margin-bottom: 80px;
-    text-align: left;
-    }
-.section-4 li:before {
-  font-family: FontAwesome;
-  content: "\f00c";
-  padding-right: 20px;
-    
+        font-size: 3em; 
+}
+#banner .section-2{
+    font-family: buenard;
+        font-size: 1.5em; 
 }
 
 
 
+@media (max-width: 768px) { 
+    #banner .item,
+    #banner .item .text-right{
+        text-align: center;
+    }
 
+    #banner ul{
+        max-width: 400px;
+        margin: 0 auto;
+        text-align: left;
+    }
+    
 
-
-
+}
