@@ -79,6 +79,9 @@
         margin: 0 auto;
         text-align: left;
     }
+     #banner .item{ 
+         min-height:100%;
+    }
     
-
 }
+
