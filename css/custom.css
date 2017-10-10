@@ -34,7 +34,7 @@ nav{
     float: left;
     padding: 30px;
     font-family: serif;
-    font-size: 25px;  
+    font-size: 20px;  
 }
 .logo-section a{
     color: #fff;
@@ -74,7 +74,7 @@ nav li a:focus {
 nav a{
     text-decoration: none;
     color: #282828;
-    font-size: 20px;
+    font-size: 15px;
     padding: 5px;
 }
 
@@ -129,36 +129,4 @@ li > a:hover:before{
     transform: scaleX(1);
 }
 
-    @media screen and (max-width: 768px){
-    .logo-section{
-        float: none;
-    }
-    nav ul{
-        background: #ffffff;
-        max-height: 0;
-        width: 100%;
-    }
-    nav ul.show{
-        max-height: 20em;
-    }
-    nav ul li{
-        box-sizing: border-box;
-        width: 100%;
-        padding: 1px;
-    }
-    .hb-button{
-        display: inline;
-    }
-    nav li {
-        border-bottom: 1px solid #575766;
-    }
-    nav li a{
-        color: #000;
-        } 
-    nav li a:hover,
-    nav li a:focus {
-        background: #ffebee;
-        color: #2C3E50; /*eto*/
-        text-decoration: none;
-}
-}
+    
