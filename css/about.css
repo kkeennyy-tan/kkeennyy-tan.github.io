@@ -165,3 +165,54 @@ a:hover {
     width: 300px;
     height: 220px;
 }
+
+/*ABOUT*/
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    #quote-carousel 
+    {
+      margin-bottom: 0;
+      padding: 0 40px 30px 40px;
+    }
+    
+}
+
+/* Small devices (tablets, up to 768px) */
+@media (max-width: 768px) { 
+    
+    /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+    
+    #quote-carousel .carousel-indicators {
+        bottom: -20px !important;  
+    }
+    #quote-carousel .carousel-indicators li {
+        display: inline-block;
+        margin: 0px 5px;
+        width: 15px;
+        height: 15px;
+    }
+    #quote-carousel .carousel-indicators li.active {
+        margin: 0px 5px;
+        width: 20px;
+        height: 20px;
+    }
+}
+@media screen and (max-width: 768px) {
+#about-us .col-sm-4 {
+      text-align: justify;
+      margin: 25px 0;
+    }
+  .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    #about-us .heart{
+    width: 180px;
+    height: 150px;
+}
+  }
+  @media screen and (max-width: 480px) {
+#about-us .logo {
+        font-size: 150px;
+    }  
+  }
