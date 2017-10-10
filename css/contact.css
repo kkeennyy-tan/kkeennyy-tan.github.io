@@ -271,6 +271,8 @@ input:focus ~ .highlight {
 	background-repeat: repeat;
 }
 
+
+
 @media(max-width: 767px){
     .contact-us-detail {
     position: absolute;
