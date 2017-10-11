@@ -276,11 +276,11 @@ input:focus ~ .highlight {
 @media(max-width: 767px){
     .contact-us-detail {
     position: absolute;
-    left: 50%;
+    left: 47%;
     top: -4%;
     background-color: #4c9cef;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: 600;
+    padding: 5px 17px;
+    border-radius: 3px;
+    font-weight: 598;
 }
 }
