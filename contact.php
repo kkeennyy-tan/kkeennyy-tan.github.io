@@ -1,15 +1,20 @@
 <!-- WEB DEVELOPER KENNY ROBERTSON TAN -->
 <!-- FACEBOOK: https://www.facebook.com/kennyrobertson.tan -->
 <!-- ACCOMPLISHED 2017 -->
+<?php
+include 'functions.php';
+?>
+<?php email_send()?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <title>GOOD HEART</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="images/logo.png" />
+    <link rel="shortcut icon" href="images/original.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
@@ -17,7 +22,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/custom.css">
     <link rel="stylesheet" type="text/css" href="css/media.css">
-    <link rel="stylesheet" type="text/css" href="css/carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <meta name="Author" content="KENNY ROBERTSON TAN "/>
     <meta name="copyright" content="GOOD HEART FOOD AND INDUSTRIAL CORPORATION"/>
@@ -87,83 +92,44 @@
             <li><a href="index.html"><i class="fa fa-home site-nav--icon"></i> &nbsp Home</a></li>
         </ul>
 </nav>
-<div id="banner">
-            <div id="carousel-example" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-example" data-slide-to="1"></li>
-                    <li data-target="#carousel-example" data-slide-to="2"></li>
-                    <li data-target="#carousel-example" data-slide-to="3"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <div class="row">
-                            <div class="col-sm-5 text-right"><img src="images/carousel-1.png" /></div>
-                            
-                            <div class="col-sm-7">
-                                <h1 class="animated fadeInUpBig section-1">ABOUT</h1>
-                                <h3 class="animated fadeInUpBig slide-delay-2 section-2">
-                                 Makes quality cones and provide service like partners.
-                              </h3>
-                            </div>
+<div class="container">
+    <div class="row margin-top-bottom">
+        <div class="col-md-offset-3 col-sm-offset-2 col-md-6 col-sm-8">   
+            <div class="row">
+                <div class="contact-us-detail"><i class="fa fa-whatsapp">&nbspContact&nbspUs</i></div>
+                    <form method="POST" class="contact-us pattern-bg">
+                        <div class="group">
+                            <input type="text" name="fullname" required>
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label><i class="fa fa-user-circle-o"></i> Name</label>
                         </div>
-                        <!-- end .row -->
-                    </div>
-                    <!-- end .item -->
-                    <div class="item">
-                        <div class="row">
-                            <div class="col-sm-5 text-right"><img src="images/carousel-2.png" /></div>
-                            <div class="col-sm-7">
-                                <h1 class="animated bounce section-1">Products</h1>
-                                <ul class="animated fadeInUpBig slide-delay-2 section-2">
-                                    <li>Wafer Cones</li>
-                                    <li>Sugar conesipsum dolor sit amet</li>
-                                    <li>Bakery Products</li>
-                                </ul>
-                            </div>
+					    <div class="group">
+                            <input type="email" name="email" >
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label><i class="fa fa-envelope-o"></i> Email</label>
                         </div>
-                        <!-- end .row -->
-                    </div>
-                    <!-- end .item -->
-                    <div class="item">
-                        <div class="row">
-                            <div class="col-sm-5 text-right"><img src="images/carousel-3.png" alt=""/></div>
-                            <div class="col-sm-7">
-                                <h1 class="animated fadeInDownBig section-2">Recognized Religious Halal Certification and Accreditation Authority</h1>
-                            </div>
+                        <div class="group">
+                            <input type="tel" name="mobile_no"  >
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label><i class="fa fa-mobile"></i> Mobile No</label>
                         </div>
-                        <!-- end .row -->
-                    </div>
-                    <!-- end .item -->
-                    <div class="item">
-                            <div class="row">
-                                <div class="col-sm-5 text-right"><img src="images/carousel-4.png" /></div>
-                                <div class="col-sm-7">
-                                    <h1 class="animated bounce section-1">System Certification</h1>
-                                    <ul class="animated fadeInUpBig slide-delay-2 section-2">
-                                        <li>HACCP CODEX ALIMENTARIUS</li>
-                                    <li>GOOD MANUFACTURING PRACTICE</li>
-                                    <li>FOOD SAFETY SYSTEM CERTIFICATION 22000</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!-- end .row -->
+                        <div class="group">
+                            <input type="text" name="message" >
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label><i class="fa fa-address-card-o"></i> Message</label>
                         </div>
-                        <!-- end .item -->
-                </div><!-- end .carousel-inner -->
-            </div><!--// end .carousel -->
-    </div>
-    <!-- end #banner -->
-<div id="box1">
-    <h1>SAMPLE1</h1>
-    </div>
-        <div id="box2">
-            <h1>SAMPLE2</h1>
+                        <div class="text-center">      
+		                  <button type="submit" name="send" class="button button-style button-style-dark button-style-color-2 "><i class="fa fa-paper-plane"></i> Submit</button>
+                        </div>  
+                    </form>
+            </div>
         </div>
-        <div id="box3">
-            <h1>SAMPLE3</h1>
-        </div>
-<!-- END Body -->
+    </div>
+</div>
 <footer>
 <section class="nb-footer">
     <div class="container">
@@ -192,10 +158,10 @@
 	               <div class="footer-title"><h2>Navigation</h2></div>
 	               <ul class="list-unstyled">
                     <li><a href="index.html">Home <i class="fa fa-angle-right pull-right"></i></a></li>
-                    <li><a href="product.html">Product <i class="fa fa-angle-right pull-right"></i></a></li>
-                    <li><a href="gallery.html">Gallery <i class="fa fa-angle-right pull-right"></i></a></li>
-                    <li><a href="about.html">About <i class="fa fa-angle-right pull-right"></i></a></li>
-                    <li><a href="contact.html">Contact Us <i class="fa fa-angle-right pull-right"></i></a></li>
+                    <li><a href="about1.html">Product <i class="fa fa-angle-right pull-right"></i></a></li>
+                    <li><a href="about1.html">Product <i class="fa fa-angle-right pull-right"></i></a></li>
+                    <li><a href="service1.html">About <i class="fa fa-angle-right pull-right"></i></a></li>
+                    <li><a href="contact1.html">Contact Us <i class="fa fa-angle-right pull-right"></i></a></li>
                 </div>
             </div>
 <div class="clearfix visible-sm"></div>
@@ -242,11 +208,12 @@
     </div>
 </section>
 </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.1/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/responsive_navbar.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/contact.js"></script>
 </body>
 </html>
