@@ -3,10 +3,8 @@
 	function email_send() {
 		if(isset($_POST['send'])) {
 			include 'PHPMailerAutoload.php';
-			$name = filter_var($_POST['fullname'], FILTER_SANITIZE_STRING);
-			$email = filter_var($_POST['email'], FILTER_SANITIZE_STRING);
-            $mobile_no = filter_var($_POST['mobile_no'], FILTER_SANITIZE_STRING);
-            $message = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
+			$name = $_POST['fullname'];
+			$email = $_POST['email'];
 			$mailer = new PHPMailer();
 			$mailer->IsSMTP();
 			$mailer->Host = 'smtp.gmail.com:465'; 
@@ -21,7 +19,7 @@
 									'allow_self_signed' => true)
 									);
 			$mailer->Username = 'kkeennyy.kt@gmail.com';
-			$mailer->Password = 'nescafesapowerq1';
+			$mailer->Password = 'nescafesapowerq1!';
             $mailer->Subject = 'Customer Inquire from ' .$name;
 			$mailer->AddAddress('kkeennyy.kt@gmail.com' );
             $mailer->SetFrom($email , 'Customer');
@@ -61,7 +59,8 @@
                                 <h4 style="color:#fff;">Created by <a href="https://www.facebook.com/kennyrobertson.tan" style="color:#ff5588;">Kenny Tan</a></h4></div>
                                 </div></div>';
             
-			
+            
+            
 			if(!$mailer->send()) {
 			echo 'Message could not be sent.';
 			echo 'Mailer Error: ' . $mailer->ErrorInfo;

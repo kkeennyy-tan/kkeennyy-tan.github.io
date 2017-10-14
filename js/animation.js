@@ -12,11 +12,10 @@ function increment() {
         $('#straw').fadeIn(300);
         loaded = 0;
         stopLoading();
-     window.location.href = 'http://stackoverflow.com';
+        window.location.href = 'https://www.youtube.com/';
     }
     else loaded++;    
 }
-
 function startLoading() {
     $('#lemon').hide();
     $('#straw').hide();
@@ -26,8 +25,4 @@ function startLoading() {
 function stopLoading() {
     clearInterval(worker);
 }
-
 startLoading();
-
-
-
