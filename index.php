@@ -1,6 +1,6 @@
-<!-- WEB DEVELOPER KENNY ROBERTSON TAN -->
-<!-- FACEBOOK: https://www.facebook.com/kennyrobertson.tan -->
-<!-- ACCOMPLISHED 2017 -->
+<?php
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
