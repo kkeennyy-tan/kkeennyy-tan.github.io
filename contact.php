@@ -13,7 +13,7 @@ include 'functions.php';
     <title>GOOD HEART</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="images/original.png" />
+    <link rel="shortcut icon" href="images/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
@@ -29,7 +29,7 @@ include 'functions.php';
     <meta name="description" content="Makes quality cones and provide service like partners."/>
     <meta property="og:title" content="GOOD HEART FOOD AND INDUSTRIAL CORPORATION"/>
     <meta name="keywords" content="GOOD HEART FOOD AND INDUSTRIAL CORPORATION"/>
-    <meta property="og:image" content="https://i.imgur.com/pLO28P8.png">
+    <meta property="og:image" content="https://i.imgur.com/5cJXloc.png">
     <meta property="og:image:width " content="400"/>
     <meta property="og:image:height" content="300"/>
     <style>
@@ -85,9 +85,8 @@ include 'functions.php';
         <button class="hb-button"><i class="fa fa-bars"></i></button>
     </div>
         <ul>
-            <li><a href="contact.php"><i class="fa fa-envelope site-nav--icon"></i> &nbsp Contact Us</a></li>
+            <li><a href="contact.html"><i class="fa fa-envelope site-nav--icon"></i> &nbsp Contact Us</a></li>
             <li><a href="about.html"><i class="fa fa-info site-nav--icon"></i> &nbsp About</a></li>
-            <li><a href="gallery.html"><i class="fa fa-camera-retro site-nav--icon"></i> &nbsp Gallery</a></li>
             <li><a href="product.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> &nbsp Product</a></li>
             <li><a href="index.html"><i class="fa fa-home site-nav--icon"></i> &nbsp Home</a></li>
         </ul>
@@ -105,22 +104,19 @@ include 'functions.php';
                             <label><i class="fa fa-user-circle-o"></i> Name</label>
                         </div>
 					    <div class="group">
-                            <input type="email" name="email" >
+                            <input type="email" name="email" required>
                             <span class="highlight"></span>
                             <span class="bar"></span>
                             <label><i class="fa fa-envelope-o"></i> Email</label>
                         </div>
                         <div class="group">
-                            <input type="tel" name="mobile_no"  >
+                            <input type="tel" name="mobile_no" required>
                             <span class="highlight"></span>
                             <span class="bar"></span>
                             <label><i class="fa fa-mobile"></i> Mobile No</label>
                         </div>
                         <div class="group">
-                            <input type="text" name="message" >
-                            <span class="highlight"></span>
-                            <span class="bar"></span>
-                            <label><i class="fa fa-address-card-o"></i> Message</label>
+                            <textarea class="form-control" id="message" name="message" class="fa fa-pencil-square-o" placeholder='&#xf044; Message' rows="5" required></textarea>
                         </div>
                         <div class="text-center">      
 		                  <button type="submit" name="send" class="button button-style button-style-dark button-style-color-2 "><i class="fa fa-paper-plane"></i> Submit</button>
@@ -158,32 +154,31 @@ include 'functions.php';
 	               <div class="footer-title"><h2>Navigation</h2></div>
 	               <ul class="list-unstyled">
                     <li><a href="index.html">Home <i class="fa fa-angle-right pull-right"></i></a></li>
-                    <li><a href="about1.html">Product <i class="fa fa-angle-right pull-right"></i></a></li>
-                    <li><a href="about1.html">Product <i class="fa fa-angle-right pull-right"></i></a></li>
-                    <li><a href="service1.html">About <i class="fa fa-angle-right pull-right"></i></a></li>
-                    <li><a href="contact1.html">Contact Us <i class="fa fa-angle-right pull-right"></i></a></li>
+                    <li><a href="product.html">Product <i class="fa fa-angle-right pull-right"></i></a></li>
+                    <li><a href="about.html">About <i class="fa fa-angle-right pull-right"></i></a></li>
+                    <li><a href="contact.html">Contact Us <i class="fa fa-angle-right pull-right"></i></a></li>
                 </div>
             </div>
-<div class="clearfix visible-sm"></div>
-<div class="col-md-3 col-sm-6">
-	<div class="footer-single">
-		<div class="footer-title"><h2>Contact Information</h2></div>
-		<address>
-			<i class="fa fa-phone"></i> 123-4567 <br>
-			<i class="fa fa-mobile"></i> +639-050-000–000<br>
-			<i class="fa fa-envelope"></i> info@gmail.com<br>
-		</address>	
-	</div>
-</div>
-<div class="col-md-3 col-sm-6">
-	<div class="footer-single">
-		<div class="footer-title"><h2>Location</h2></div>
-		<address>
-			<i class="fa fa-map-marker"></i> Warehouse No.5, Fibertex Compound, Km.26, National Road, Barangay Dolores <br>
-			Taytay, Rizal, Philippines
-		</address>				
-	</div>
-</div>
+                <div class="clearfix visible-sm"></div>
+                    <div class="col-md-3 col-sm-6">
+	                   <div class="footer-single">
+		                  <div class="footer-title"><h2>Contact Information</h2></div>
+		                  <address>
+			                 <i class="fa fa-phone"></i> 123-4567 <br>
+			                 <i class="fa fa-mobile"></i> +639-050-000–000<br>
+			                 <i class="fa fa-envelope"></i> info@gmail.com<br>
+		                  </address>	
+	                   </div>
+                    </div>
+            <div class="col-md-3 col-sm-6">
+	           <div class="footer-single">
+		          <div class="footer-title"><h2>Location</h2></div>
+		          <address>
+			         <i class="fa fa-map-marker"></i> Warehouse No.5, Fibertex Compound, Km.26, National Road, Barangay Dolores <br>
+			         Taytay, Rizal, Philippines
+		          </address>				
+	           </div>
+            </div>
         </div>
     </div>
 </section>	

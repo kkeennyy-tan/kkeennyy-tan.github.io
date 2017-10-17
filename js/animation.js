@@ -12,7 +12,7 @@ function increment() {
         $('#straw').fadeIn(300);
         loaded = 0;
         stopLoading();
-        window.location.href = 'https://www.youtube.com/';
+        window.location.href = 'http://localhost/goodheart/';
     }
     else loaded++;    
 }

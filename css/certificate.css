@@ -1,0 +1,26 @@
+.cert .card{
+    margin-top: 10%;
+}
+
+.cert .card:hover{
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+  }
+ .card:hover{
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+  }
+
+a {transition: .25s all;}
+.cert .card {
+  overflow: hidden;
+  @include BoxShadowHelper(1);
+  transition: .25s box-shadow;
+  &:focus,
+  &:hover {@include BoxShadowHelper(2);}
+}
+.cert .card-inverse .card-img-overlay {
+  background-color: rgba(#333,.85);
+  border-color: rgba(#333,.85);
+}
+hr.style1{
+	border-top: 1px solid #8c8b8b;
+}
